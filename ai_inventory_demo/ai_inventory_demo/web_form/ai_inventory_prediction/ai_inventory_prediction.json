@@ -1,0 +1,63 @@
+{
+ "creation": "2025-10-24 10:00:00.000000",
+ "doctype": "Web Form",
+ "title": "AI Inventory Prediction",
+ "route": "inventory-prediction",
+ "published": 1,
+ "login_required": 1,
+ "doc_type": "Inventory Demo Prediction",
+ "allow_edit": 0,
+ "show_attachments": 0,
+ "allow_multiple": 0,
+ "client_script": "",
+ "web_form_fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prediction_result",
+   "fieldtype": "Section Break",
+   "label": "Prediction Result"
+  },
+  {
+   "fieldname": "predicted_quantity",
+   "fieldtype": "Float",
+   "label": "Predicted Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "confidence_score",
+   "fieldtype": "Percent",
+   "label": "Confidence Score",
+   "read_only": 1
+  }
+ ],
+ "modified": "2025-10-24 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "AI Inventory Demo",
+ "name": "ai-inventory-prediction",
+ "owner": "Administrator",
+ "portal_settings": {
+  "show_payment": 0,
+  "show_sidebar": 0,
+  "show_title": 1
+ }
+}
